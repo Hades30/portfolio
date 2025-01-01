@@ -99,7 +99,7 @@ export default function Hero() {
 
       {/* Main Content */}
       <div className="relative z-10 text-center space-y-8">
-        <h1 className="text-4xl md:text-4xl font-bold">Tanish Kumar Singh</h1>
+        <h1 className="text-4xl md:text-4xl font-bold">Hi, I am Tanish</h1>
 
         <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full">
           <Image
