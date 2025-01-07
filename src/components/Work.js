@@ -1,5 +1,9 @@
+"use client";
 import { Card } from "./ui/card";
+import React from "react";
 import Image from "next/image";
+import MyDocument from "./Resume";
+
 const works = [
   {
     company: "Fampay Solutions",
@@ -42,24 +46,14 @@ const works = [
 export default function Work() {
   return (
     <section
-      id="Work"
+      id="Resume"
       className="min-h-screen bg-gradient-to-b from-white to-black py-20"
     >
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-          My Work
+          Resume
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {works.map((work, index) => (
-            <div
-              key={index}
-              className="bg-[#1c1c1c] p-8 pb-0 rounded-lg shadow-lg hover:shadow-xl text-black hover:transform hover:scale-105 transition-all border border-black/10"
-            >
-              <span>Procol</span>
-              <Image src="/procol.png" width="300" height="400"></Image>
-            </div>
-          ))}
-        </div>
+        <MyDocument />
       </div>
     </section>
   );

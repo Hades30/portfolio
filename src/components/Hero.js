@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import SocialLinks from "./SocialLinks";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const TEXT_SWITCHER = [
   "I like to code 👨‍💻",
@@ -55,23 +55,7 @@ export default function Hero() {
           </li>
           <li>
             <a href="#Work" className="hover:text-[#1A202C] transition-colors">
-              Work
-            </a>
-          </li>
-          <li>
-            <a
-              href="#skills"
-              className="hover:text-[#1A202C] transition-colors"
-            >
-              Skills
-            </a>
-          </li>
-          <li>
-            <a
-              href="#skills"
-              className="hover:text-[#1A202C] transition-colors"
-            >
-              Blogs
+              Resume
             </a>
           </li>
         </ul>

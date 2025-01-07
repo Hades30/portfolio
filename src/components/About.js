@@ -1,3 +1,5 @@
+"use client";
+import React from "react";
 import Image from "next/image";
 
 export default function About() {
@@ -11,7 +13,7 @@ export default function About() {
           <Image
             src="/dance-ezgif.com-gif-maker.gif"
             alt="Profile"
-            className="justify-self-center"
+            className="justify-self-center hidden md:block"
             width="360"
             height="360"
           />
