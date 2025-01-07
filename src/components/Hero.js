@@ -44,12 +44,15 @@ export default function Hero() {
   }, [text, fullText, textIndex, isDeleting]);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 bg-white">
+    <section
+      className="relative min-h-screen flex flex-col items-center justify-center px-4 bg-white"
+      id="About"
+    >
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 py-6 px-4">
         <ul className="flex justify-center space-x-16 text-[#4A5568] uppercase text-sm tracking-[0.3em]">
           <li>
-            <a href="#about" className="hover:text-[#1A202C] transition-colors">
+            <a href="#About" className="hover:text-[#1A202C] transition-colors">
               About
             </a>
           </li>
