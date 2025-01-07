@@ -5,10 +5,12 @@ import SocialLinks from "./SocialLinks";
 import React, { useState, useEffect } from "react";
 
 const TEXT_SWITCHER = [
-  "I like to code 👨‍💻",
-  "I like to play 🎮",
-  "I like to sleep 😴",
+  "I like to code ",
+  "I like to play ",
+  "I like to sleep ",
 ];
+
+const EMOJI_SWITCHER = ["👨‍💻", "🎮", "😴"];
 
 export default function Hero() {
   const [text, setText] = useState("");
@@ -42,6 +44,12 @@ export default function Hero() {
       setFullText(TEXT_SWITCHER[nextIndex]);
     }
   }, [text, fullText, textIndex, isDeleting]);
+
+  const showEmoji = () => {
+    if (text.length === TEXT_SWITCHER[textIndex].length) {
+      return EMOJI_SWITCHER[textIndex];
+    }
+  };
 
   return (
     <section
@@ -104,7 +112,9 @@ export default function Hero() {
             FULLSTACK DEVELOPER
           </p>
           <div className="flex items-center justify-center space-x-2">
-            <h2 className="text-4xl font-bold text-[#1A202C]">{text}</h2>
+            <h2 className="text-4xl font-bold text-[#1A202C]">
+              {text} {showEmoji()}
+            </h2>
             <span className="inline-block w-[3px] h-12 bg-[#1A202C] animate-blink"></span>
           </div>
         </div>

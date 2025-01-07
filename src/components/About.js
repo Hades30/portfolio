@@ -7,7 +7,7 @@ export default function About() {
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">
-          Here is a little background
+          A little background
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <Image
@@ -17,7 +17,7 @@ export default function About() {
             width="360"
             height="360"
           />
-          <div className="space-y-6 text-gray-700">
+          <div className="space-y-4 text-gray-800 text-sm md:text-lg">
             <p>
               I am a Frontend Heavy Fullstack engineer of 3 years Experience and
               I am currently working at Procol Tech Pvt Ltd (Gurugram) as a
@@ -36,7 +36,7 @@ export default function About() {
             </p>
             <p>
               When not coding away, you&apos;ll find me gaming and playing
-              football, watching movies.
+              football, watching movies and Naruto.
             </p>
           </div>
         </div>
