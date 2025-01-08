@@ -13,6 +13,7 @@ export default function About() {
           <Image
             src="/dance-ezgif.com-gif-maker.gif"
             alt="Profile"
+            unoptimized
             className="justify-self-center hidden md:block"
             width="360"
             height="360"
@@ -34,9 +35,17 @@ export default function About() {
               Computer Science and Engineering from Jaypee Institute of
               Information Technology (JIIT), Noida.
             </p>
-            <p>
+            <p style={{ position: "relative" }}>
               When not coding away, you&apos;ll find me gaming and playing
               football, watching movies and Naruto.
+              <Image
+                src="/naruto2.png"
+                alt="Profile"
+                unoptimized
+                className="justify-self-center hidden md:block animated-image"
+                width="52"
+                height="52"
+              />
             </p>
           </div>
         </div>

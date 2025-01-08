@@ -64,6 +64,24 @@ html {
   animation: contractCircle 10s linear infinite;
 }
 
+@keyframes moveImage {
+  0% {
+    transform: translateX(100%); /* Start from the rightmost edge */
+  }
+  100% {
+    transform: translateX(
+      calc(-520%)
+    ); /* Move to the left until it reaches the word "Naruto" */
+  }
+}
+
+.animated-image {
+  position: absolute;
+  right: 0;
+  top: 24px;
+  animation: moveImage 5s linear infinite; /* Adjust duration as needed */
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;

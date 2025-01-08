@@ -86,7 +86,7 @@ export default function Hero() {
               animationDuration: `${15 + i * 3}s`,
               animationTimingFunction: "linear",
               animationIterationCount: "infinite",
-              animationDelay: `${i * 4}s`,
+              animationDelay: `${2}s`,
             }}
           />
         ))}
