@@ -42,7 +42,7 @@ export default function About() {
                 src="/naruto2.png"
                 alt="Profile"
                 unoptimized
-                className="justify-self-center hidden md:block animated-image"
+                className="justify-self-center hidden lg:block animated-image"
                 width="52"
                 height="52"
               />
